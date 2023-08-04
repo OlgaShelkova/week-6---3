@@ -1,0 +1,134 @@
+/*@font-face {
+    font-family : 'Neucha';
+    font-style : normal;
+    font-weight : 400;
+    src : url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+    }*/
+
+    @font-face {
+    font-family : 'Neucha';
+    font-style : italic;
+    font-weight : 400;
+    src : url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+    }
+
+body {
+    background: linear-gradient(180deg, #2B2F53 0%, #1D1C34 33.96%);
+    width: 1264px;
+    height: 982px;
+}
+
+a {
+    text-decoration : none;
+    color :white;
+}
+
+a:hover{
+color: #8015A7;
+background-color: #b7a1d3;
+padding: 5px;
+border-radius: 5px;
+}
+
+.info {
+    padding : 5px;
+    font-size : 15px;
+    font-family : 'Neucha', italic;
+    text-transform : uppercase;
+    display : flex;
+    justify-content: end;
+    background: radial-gradient(50.00% 128.57% at 50.00% -36.61%, #8015A7 0%, rgba(97, 54, 144, 0.00) 100%);
+    border-radius: 20px;
+box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.30);
+backdrop-filter: blur(10px);
+}
+
+li {
+    margin : 10px;
+    padding : 10px;
+    display : inline;
+    box-sizing : border-box;
+    }
+
+h3 {
+    margin-top : 15px;
+    line-height : normal;
+    font-size : 17px;
+    font-family : 'Neucha', italic;
+    font-weight: 700;
+    color : #d4d4dd;
+    }
+
+p {
+      font-size : 12px;
+      font-family : 'Neucha', italic;
+      color: rgb(241, 188, 247);
+      align-items: center;
+      }
+
+hr {
+    border : #4a2679 solid 3px;
+}
+
+.grid{
+display: grid;
+grid-template-columns: repeat(3, 376px);
+grid-template-rows: 50px 400px 20px 320px 20px 40px;
+justify-content: space-around;
+}
+
+[class*="box"] {
+display: flex;
+text-align: end;
+flex-direction: column;
+z-index: 1;
+margin: 10px;
+padding: 15px;
+background-color: #1D1C34;
+box-sizing: border-box;
+border-radius: 10px;
+box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.30);
+}
+
+.logo {
+  margin: 10px 600px 0px 0px;
+  justify-content: center;
+}
+.box-logo {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  z-index: 10;
+}
+.box-1 {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+  }
+  
+  .box-2 {
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;}
+
+  .box-3 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    justify-content: end;
+  }
+
+  .box-4 {
+    grid-row: 4 / 6;
+    grid-column: 1 / 2;
+  }
+    
+  .box-5 {
+    grid-row: 4 / 6;
+    grid-column: 2 / 3;
+  }
+  .box-6 {
+    grid-row: 4 / 6;
+    grid-column: 3 / 4;
+  }
+
+.box-section {
+  grid-row: 6 / 7;
+  grid-column: 1 / 4;
+  }
